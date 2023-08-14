@@ -1,0 +1,13 @@
+<div class="text-center bg-black text-white w-25 mt-5 m-auto ">
+    <div class="d-flex ">
+            <h1 class="mt-2 "><img src="" >Register form</h1>
+        
+    </div>  
+     <form class="m-2 p-2">
+            <p class="fs-6 fw-light text-secondary">Please enter your username and password!</p>
+            <input #username class="rounded-pill border-primary bg-transparent text-center m-2 fs-6 fw-light text-white"type="text" placeholder="Username"/><br>
+            <input  #password class="rounded-pill border-primary bg-transparent text-center m-2 fs-6 fw-light text-white" type="password" placeholder=" Password"/><br>
+            <button  type="button" class="rounded-pill border-success bg-transparent text-secondary m-3 " (click)="register(username,password)">Register</button>
+            <p class="fs-6 fw-light">Already user?Click here to <a href="#">Login</a></p>
+       </form>
+    </div>

@@ -1,0 +1,15 @@
+<div class="text-center bg-black text-white w-25 mt-5 m-auto ">
+<div class="d-flex justify-content-center">
+        <img [src]="imageUrl" class="img-fluid rounded-pill text-center  "width="65px" height="65px" >
+        <h1 class="mt-2 ">{{title}}</h1>
+    
+</div>  
+ <form class="m-2 p-2">
+        <p class="fs-6 fw-light text-secondary">Please enter your username and password!</p>
+        <input (change)="usernameChange($event)" class="rounded-pill border-primary bg-transparent text-center m-2 fs-6 fw-light text-white"type="text" placeholder="Username"/><br>
+        <input (change)="passwordChange($event)" class="rounded-pill border-primary bg-transparent text-center m-2 fs-6 fw-light text-white" type="password" placeholder=" Password"/><br>
+        <a class="fs-6 fw-light text-secondary m-2">Forgot password?</a><br>
+        <button (click)="login()" type="button" class="rounded-pill border-success bg-transparent text-secondary m-3 "  >Login</button>
+        <p class="fs-6 fw-light">New User Click here to <a routerLink="register">Register</a></p>
+   </form>
+</div>          

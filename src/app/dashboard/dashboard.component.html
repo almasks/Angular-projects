@@ -1,0 +1,9 @@
+<h1 class="text-center text-primary">hello {{username}} </h1>
+<form class="text-center m-auto bg-black w-25 p-3">
+    <input type="text" placeholder="firstname" class="w-75 m-2 bg-transparent text-white " name="first" [(ngModel)]="fName"/><br>
+    <input type="text" placeholder="lastname" class="w-75 m-2 bg-transparent text-white " name="last" [(ngModel)]="lName"/><br>
+    <input type="text" placeholder="designation" class="w-75 m-2 bg-transparent text-white "name="desg"[(ngModel)]="desg"/><br>
+    <input type="text" placeholder="age" class="w-75 m-2 bg-transparent text-white " name="age"[(ngModel)]="age"/><br>
+    <button type="button" class="m-2 bg-primary rounded-pill border-0 text-white"(click)="update()">update</button>
+
+</form>
